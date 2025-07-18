@@ -97,7 +97,7 @@ station_lat = st.number_input("Charging Station Latitude", value=12.9352)
 station_lon = st.number_input("Charging Station Longitude", value=77.6245)
 
 if st.session_state.catboost_pred is not None:
-    api_key = "AIzaSyCwmIsH-V30Wzegf8iU-YAU9cND99f3Y0M"
+    api_key = "Enter-API-KEY"
     coordinates = [[start_lon, start_lat], [station_lon, station_lat]]
     url = "https://api.openrouteservice.org/v2/directions/cycling-regular"
     headers = {'Authorization': api_key, 'Content-Type': 'application/json'}
